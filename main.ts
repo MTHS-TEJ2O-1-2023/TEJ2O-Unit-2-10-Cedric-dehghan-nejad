@@ -39,7 +39,7 @@ input.onButtonPressed(Button.A, function () {
       basic.pause(1000)
       neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
       neopixelStrip.show()
-    } 
+    }
     }
   if (lightValue >= 104) {
     if (lightValue < 156) {
@@ -49,7 +49,7 @@ input.onButtonPressed(Button.A, function () {
       neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
       neopixelStrip.show()
     } 
-    }
+  }
 
   if (lightValue >= 156) {
     if (lightValue < 208) {
@@ -58,10 +58,10 @@ input.onButtonPressed(Button.A, function () {
       basic.pause(1000)
       neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
       neopixelStrip.show()
-    } 
+    }
     }
   if (lightValue >= 208) {
-    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Purple))
+  neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Purple))
     neopixelStrip.show()
     basic.pause(1000)
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
