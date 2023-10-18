@@ -19,7 +19,7 @@ neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.show()
 basic.showIcon(IconNames.Happy)
 
-input.onButtonPressed (Button.A, function() {
+input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   lightValue = input.lightLevel()
   lightValue = Math.round(lightValue)
@@ -39,7 +39,8 @@ input.onButtonPressed (Button.A, function() {
       basic.pause(1000)
       neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
       neopixelStrip.show()
-    } }
+    } 
+    }
   if (lightValue >= 104) {
     if (lightValue < 156) {
       neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
@@ -47,7 +48,8 @@ input.onButtonPressed (Button.A, function() {
       basic.pause(1000)
       neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
       neopixelStrip.show()
-    } }
+    } 
+    }
 
   if (lightValue >= 156) {
     if (lightValue < 208) {
@@ -56,7 +58,8 @@ input.onButtonPressed (Button.A, function() {
       basic.pause(1000)
       neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
       neopixelStrip.show()
-    } }
+    } 
+    }
   if (lightValue >= 208) {
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Purple))
     neopixelStrip.show()
