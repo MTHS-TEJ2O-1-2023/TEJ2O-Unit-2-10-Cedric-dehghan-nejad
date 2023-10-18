@@ -31,31 +31,32 @@ basic.showIcon(IconNames.Happy)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.show()
   }
-  if (lightValue >= 52){
-  if (lightValue < 104) {
-    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
-    neopixelStrip.show()
-    basic.pause(1000)
-    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.show()
-  }}
-  if (lightValue >= 104){
-  if (lightValue < 156){
-    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
-    neopixelStrip.show()
-    basic.pause(1000)
-    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.show() 
-  }}
 
-  if (lightValue >= 156){
-  if  (lightValue < 208){
-    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
-    neopixelStrip.show()
-    basic.pause(1000)
-    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.show()
+  if (lightValue >= 52){
+    if (lightValue < 104) {
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
+      neopixelStrip.show()
+      basic.pause(1000)
+      neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+      neopixelStrip.show()
   }}
+    if (lightValue >= 104) {
+      if (lightValue < 156){
+      neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
+      neopixelStrip.show()
+      basic.pause(1000)
+      neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.show()
+  } }
+
+  if (lightValue >= 156) {
+    if (lightValue < 208) {
+      neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
+      neopixelStrip.show()
+      basic.pause(1000)
+      neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+      neopixelStrip.show()
+  } }
   if (lightValue >= 208){
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Purple))
     neopixelStrip.show()
